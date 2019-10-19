@@ -23,6 +23,6 @@ Since we are in the very early stage of the experiment. We build the model with 
 
 ### Metrics
 
-| Model Architecture  | Validation Accuracy |
-| ------------------- | ------------------- |
-| ResNet34            | 23.32               |
+| Model Architecture  | Validation Error Rate | Top-5 Accuracy  |
+| ------------------- | --------------------- | --------------- |
+| ResNet34            | 13.04                 | 97.40           |

@@ -11,10 +11,10 @@ import (
 	"strings"
 )
 
-const imgPath string = "/Users/zixuan/Downloads/mushroom-data/img/"
-const csvPath string = "/Users/zixuan/Downloads/mushroom-data/2017.csv"
-const numberOfWorker int = 30
-const reportRate = 100
+const imgPath string = "PATH OF IMAGES STORAGE DIRECTORY"
+const csvPath string = "PATH OF CSV FILES FROM EXPORT TOOLS"
+const numberOfWorker int = 10
+const reportRate = 100 // report progress every 100 download
 var r, _ = regexp.Compile("[0-9]+$")
 
 type data struct {

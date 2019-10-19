@@ -19,10 +19,10 @@ The data distribution is pretty skewed as you can see. We remove the fungal spec
 Since the images from MushroomExpert were identified by fungal biologist, we use their images as our test set to evaluate the performance of our model.
 
 ## Model
-Since we are in the very early stage of the experiment. We build the model with fast.ai library. The model with gradually switch to pure pytorch code as we fine-tuning our model.
+Since we are in the very early stage of the experiment. We build the model with fast.ai library. The model will gradually switch to pure pytorch code as we fine-tuning our model.
 
 ### Metrics
 
 | Model Architecture  | Validation Accuracy |
 | ------------------- | ------------------- |
-| ResNet34            | 31.07               |
+| ResNet34            | 23.32               |

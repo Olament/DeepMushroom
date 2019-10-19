@@ -14,11 +14,13 @@ import (
 const imgPath string = "PATH OF IMAGES STORAGE DIRECTORY"
 const csvPath string = "PATH OF CSV FILES FROM EXPORT TOOLS"
 const numberOfWorker int = 10
+const urlIndex int = 12
+const nameIndex int = 32
 const reportRate = 100 // report progress every 100 download
 var r, _ = regexp.Compile("[0-9]+$")
 
 type data struct {
-	url string
+	url  string
 	name string
 }
 
@@ -45,10 +47,10 @@ func main() {
 		}
 
 		/* get rid of lichen from fungi dataset */
-		if !strings.Contains(line[33], "lichen") {
+		if !strings.Contains(line[nameIndex], "lichen") {
 			queue = append(queue, data{
-				url:  line[13],
-				name: line[32],
+				url:  line[urlIndex],
+				name: line[nameIndex],
 			})
 		}
 	}
@@ -68,18 +70,18 @@ func main() {
 	for i := 0; i < len(queue); i++ {
 		data := queue[i]
 
-		<- output
+		<-output
 		input <- data
 		go worker(input, output)
 
-		if (i % reportRate == 0) {
+		if i%reportRate == 0 {
 			fmt.Println(i)
 		}
 	}
 }
 
 func worker(input chan data, done chan bool) {
-	data := <- input
+	data := <-input
 	url := data.url
 	name := data.name
 

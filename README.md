@@ -7,4 +7,11 @@ iNaturalist.org is a citizen science webstie that allows people upload the the i
 
 We use both python and golang script to download the images from iNaturalist.org. Our golang script supports mulit-thread. See here: [main.go](https://github.com/Olament/DeepMushroom/blob/master/DataCollection/main.go)
 
+**Distribution** 
+
+![](https://github.com/Olament/DeepMushroom/blob/master/md/distribution.png)
+
+The data distribution is pretty skewed as you can see. For the sake the classfication, we remove the species with less than 10 images.
+
 ### MushroomExpert.com
+Since the images from MushroomExpert were identified by fungal biologist, we use their images as our test set to evaluate the performance of our model.

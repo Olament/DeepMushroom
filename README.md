@@ -15,3 +15,6 @@ The data distribution is pretty skewed as you can see. For the sake the classfic
 
 ### MushroomExpert.com
 Since the images from MushroomExpert were identified by fungal biologist, we use their images as our test set to evaluate the performance of our model.
+
+## Model
+Since we are in the very early stage of the experiment. We build the model with fast.ai library. The model with gradually switch to pure pytorch code as we fine-tuning our model.

@@ -23,10 +23,11 @@ Since we are in the very early stage of the experiment. We build the model with 
 
 ### Metrics
 
-| Model Architecture  | Validation Error Rate | Top-5 Accuracy  |
-| ------------------- | --------------------- | --------------- |
-| ResNet34            | 13.04                 | 97.40           |
-
+|     Architecture    | Validation Accuracy | Validation Top-5 Accuracy | Test Accurarcy | Test Top-5 Accuracy |
+|:-------------------:|:-------------------:|:-------------------------:|:--------------:|:-------------------:|
+|       ResNet34      |        70.68        |           86.36           |      31.94     |        48.11        |
+|       ResNet50      |        79.67        |           91.76           |      38.77     |        59.14        |
+| ResNet50+Focal Loss |        80.24        |           92.32           |      39.48     |        60.45        |
 
 #### Top 10 Most Confused Fungal Species
 

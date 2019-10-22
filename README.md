@@ -26,3 +26,19 @@ Since we are in the very early stage of the experiment. We build the model with 
 | Model Architecture  | Validation Error Rate | Top-5 Accuracy  |
 | ------------------- | --------------------- | --------------- |
 | ResNet34            | 13.04                 | 97.40           |
+
+
+#### Top 10 Most Confused Fungal Species
+
+|        Prediction        |       Ground Truth       |
+|:------------------------:|:------------------------:|
+|    Fomitopsis mounceae   |    Fomitopsis pinicola   |
+|   Pleurotus pulmonarius  |    Pleurotus ostreatus   |
+| Dacrymyces chrysospermus |   Tremella mesenterica   |
+|   Tremella mesenterica   | Dacrymyces chrysospermus |
+|  Laetiporus gilbertsonii |   Laetiporus sulphureus  |
+|     Stereum hirsutum     |    Stereum complicatum   |
+|     Tremella aurantia    |   Tremella mesenterica   |
+|    Ganoderma megaloma    |   Ganoderma applanatum   |
+|  Laetiporus cincinnatus  |   Laetiporus sulphureus  |
+|   Ganoderma applanatum   |     Ganoderma brownii    |
